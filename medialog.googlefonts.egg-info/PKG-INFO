@@ -1,0 +1,54 @@
+Metadata-Version: 1.0
+Name: medialog.googlefonts
+Version: 1.1
+Summary: Googlefonts for Plone
+Home-page: http://medialog.no
+Author: Espen Moe-Nilssen
+Author-email: espen@medialog.no
+License: GPL
+Description: Introduction
+        ============
+        
+        An easy way to test and include Googlefonts:
+        http://code.google.com/webfonts
+        
+        After you have installed the product, you get a control panel to choose an extra font etc. from
+        
+        See also:
+        http://products.medialog.no/googlefonts
+        
+        To do: Use a vocabulary instead of repeating the font names all the time.
+        
+        Changelog
+        =========
+        
+        1.1
+        ------------------------------------
+        Added browser view to show all available fonts.
+        Use it like this: http://yoursite/@@fontsheet
+        
+        1.0.1
+        ------------------------------------
+        There are now so many fonts available from google, so I will only try to add those that I like.
+        
+        1.0
+        ------------------------------------
+        Added all (but two) fonts from http://google.com/webfonts.
+        
+        
+        0.3
+        ____________________________________
+        Added more fonts
+        
+        0.2
+        ____________________________________
+        Changed to text-fields to get more space to write the css.
+        
+        
+        0.1
+        ____________________________________
+        First release
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

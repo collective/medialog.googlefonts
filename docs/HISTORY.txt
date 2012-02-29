@@ -1,0 +1,29 @@
+Changelog
+=========
+
+1.1
+------------------------------------
+Added browser view to show all available fonts.
+Use it like this: http://yoursite/@@fontsheet
+
+1.0.1
+------------------------------------
+There are now so many fonts available from google, so I will only try to add those that I like.
+
+1.0
+------------------------------------
+Added all (but two) fonts from http://google.com/webfonts.
+
+
+0.3
+____________________________________
+Added more fonts
+
+0.2
+____________________________________
+Changed to text-fields to get more space to write the css.
+
+
+0.1
+____________________________________
+First release

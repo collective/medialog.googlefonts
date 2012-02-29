@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="medialog.googlefonts">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Medialog Googlefonts"
+      directory="profiles/default"
+      description='Adds Google Webfonts to your site.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

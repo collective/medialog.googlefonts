@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="medialog.googlefonts">
+
+<metal:css fill-slot="style_slot">
+<style>
+.fontoverview p  {
+font-size:  34px;
+}
+.fontoverview {
+padding:10px 20px; 
+background: #FBFBFB; 
+margin-bottom:10px;
+}
+</style>
+</metal:css>
+<metal:js fill-slot="javascript_head_slot">
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: ["Abel", "Abril Fatface", "Aclonica", "Allan", "Allerta", "Allerta Stencil", "Amaranth", "Annie Use Your Telescope", "Anonymous Pro", "Anton", "Architects Daughter", "Arimo", "Arvo", "Astloch", "Bangers", "Bentham", "Bevan", "Buda", "Cabin", "Calligraffitti", "Candal", "Cantarell", "Cardo", "Cherry Cream Soda", "Chewy", "Coda", "Coming Soon", "Copse", "Corben", "Cousine", "Covered By Your Grace", "Crafty Girls", "Crimson Text", "Crushed", "Cuprum", "Damion", "Dancing Script", "Dawning of a New Day", "Droid Sans", "Droid Sans Mono", "Droid Serif", "EB Garamond", "Expletus Sans", "Fontdiner Swanky", "Geo", "Goudy Bookletter 1911", "Gruppo", "Homemade Apple", "IM Fell", "Inconsolata", "Indie Flower", "Irish Grover", "Josefin Sans", "Josefin Slab", "Just Another Hand", "Just Me Again Down Here", "Kenia", "Kranky", "Kreon", "Kristi", "Lato", "League Script", "Lekton", "Lobster", "Luckiest Guy", "Maiden Orange", "Meddon", "MedievalSharp", "Merriweather", "Michroma", "Miltonian", "Molengo", "Montserrat", "Mountains of Christmas", "Neucha", "Neuton", "News Cycle", "Nobile", "Nova", "OFL Sorts Mill Goudy TT", "Old Standard TT", "Orbitron", "Oswald", "Over the Rainbow", "PT Sans", "PT Serif", "Pacifico by Vernon Adams ", "Pacifico", "Permanent Marker", "Philosopher", "Puritan", "Quattrocento", "Quattrocento Sans", "Radley by Vernon Adams ", "Radley", "Raleway", "Reenie Beanie", "Rock Salt", "Schoolbell", "Six Caps", "Slackey", "Smythe", "Sniglet", "Special Elite", "Sue Ellen Francisco", "Sunshiney", "Swanky and Moo Moo", "Syncopate", "Tangerine", "Terminal Dosis Light", "The Girl Next Door", "Tinos", "Ubuntu", "UnifrakturMaguntia", "Unkempt", "VT323", "Vibur", "Vollkorn", "Waiting for the Sunrise", "Wallpoet", "Walter Turncoat", "Yanone Kaffeesatz"] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script> 
+</metal:js>
+
+<body>
+<metal:main fill-slot="content" tal:define="families python:['Abel', 'Abril Fatface', 'Aclonica', 'Allan', 'Allerta', 'Allerta Stencil', 'Amaranth', 'Annie Use Your Telescope', 'Anonymous Pro', 'Anton', 'Architects Daughter', 'Arimo', 'Arvo', 'Astloch', 'Bangers', 'Bentham', 'Bevan', 'Buda', 'Cabin', 'Calligraffitti', 'Candal', 'Cantarell', 'Cardo', 'Cherry Cream Soda', 'Chewy', 'Coda', 'Coming Soon', 'Copse', 'Corben', 'Cousine', 'Covered By Your Grace', 'Crafty Girls', 'Crimson Text', 'Crushed', 'Cuprum', 'Damion', 'Dancing Script', 'Dawning of a New Day', 'Droid Sans', 'Droid Sans Mono', 'Droid Serif', 'EB Garamond', 'Expletus Sans', 'Fontdiner Swanky', 'Geo', 'Goudy Bookletter 1911', 'Gruppo', 'Homemade Apple', 'IM Fell', 'Inconsolata', 'Indie Flower', 'Irish Grover', 'Josefin Sans', 'Josefin Slab', 'Just Another Hand', 'Just Me Again Down Here', 'Kenia', 'Kranky', 'Kreon', 'Kristi', 'Lato', 'League Script', 'Lekton', 'Lobster', 'Luckiest Guy', 'Maiden Orange', 'Meddon', 'MedievalSharp', 'Merriweather', 'Michroma', 'Miltonian', 'Molengo', 'Montserrat', 'Mountains of Christmas', 'Neucha', 'Neuton', 'News Cycle', 'Nobile', 'Nova', 'OFL Sorts Mill Goudy TT', 'Old Standard TT', 'Orbitron', 'Oswald', 'Over the Rainbow', 'PT Sans', 'PT Serif', 'Pacifico by Vernon Adams ', 'Pacifico', 'Permanent Marker', 'Philosopher', 'Puritan', 'Quattrocento', 'Quattrocento Sans', 'Radley by Vernon Adams ', 'Radley', 'Raleway', 'Reenie Beanie', 'Rock Salt', 'Schoolbell', 'Six Caps', 'Slackey', 'Smythe', 'Sniglet', 'Special Elite', 'Sue Ellen Francisco', 'Sunshiney', 'Swanky and Moo Moo', 'Syncopate', 'Tangerine', 'Terminal Dosis Light', 'The Girl Next Door', 'Tinos', 'Ubuntu', 'UnifrakturMaguntia', 'Unkempt', 'VT323', 'Vibur', 'Vollkorn', 'Waiting for the Sunrise', 'Wallpoet', 'Walter Turncoat', 'Yanone Kaffeesatz']">
+
+    <h2>Medialog Googlefonts Fontsheet</h2>
+    <div class="fontoverview" tal:repeat="fontfamily families">
+        <h3><span tal:content="fontfamily" /></h3>
+        <hr/>
+        <p style="" tal:attributes="style python:'font-family:' + fontfamily">1234567890 abcdefghijklmnopørstuvwxyzæøå ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ</p>
+    </div>
+
+</metal:main>
+</body>
+</html>
+
+   

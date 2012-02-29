@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="medialog.googlefonts">
+
+/>
+
+   
+    <browser:viewlet
+	name="medialog.googlefonts.head"
+	manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
+	class=".viewlet.GooglefontsHead"
+	layer="medialog.googlefonts.interfaces.IGooglefontsLayer"
+	permission="zope2.View"
+    />
+  
+   <browser:page	for="*"        name="fontsheet"	template="fontsheet.pt"        permission="zope2.View"
+    />
+
+</configure>
