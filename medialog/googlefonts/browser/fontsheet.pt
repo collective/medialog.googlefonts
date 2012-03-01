@@ -42,7 +42,7 @@ margin-bottom:10px;
     <div class="fontoverview" tal:repeat="fontfamily families">
         <h3><span tal:content="fontfamily" /></h3>
         <hr/>
-        <p style="" tal:attributes="style python:'font-family:' + fontfamily">1234567890 abcdefghijklmnopørstuvwxyzæøå ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ</p>
+        <p style="" tal:attributes="style python:'font-family:' + fontfamily">1234567890 abcde fghijk lmnopqrst uvwxyz &#230;&#248;&#229; ABCDE FGHIJKL MNOPQRST UVWXYZ &#198;&#216;&#197;</p>
     </div>
 
 </metal:main>

@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.1.1
+------------------------------------
+Added Norwegian letters to the fontsheet
+
 1.1
 ------------------------------------
 Added browser view to show all available fonts.
