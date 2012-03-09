@@ -38,7 +38,15 @@ margin-bottom:10px;
 <body>
 <metal:main fill-slot="content" tal:define="families python:['Abel', 'Abril Fatface', 'Aclonica', 'Allan', 'Allerta', 'Allerta Stencil', 'Amaranth', 'Annie Use Your Telescope', 'Anonymous Pro', 'Anton', 'Architects Daughter', 'Arimo', 'Arvo', 'Astloch', 'Bangers', 'Bentham', 'Bevan', 'Buda', 'Cabin', 'Calligraffitti', 'Candal', 'Cantarell', 'Cardo', 'Cherry Cream Soda', 'Chewy', 'Coda', 'Coming Soon', 'Copse', 'Corben', 'Cousine', 'Covered By Your Grace', 'Crafty Girls', 'Crimson Text', 'Crushed', 'Cuprum', 'Damion', 'Dancing Script', 'Dawning of a New Day', 'Droid Sans', 'Droid Sans Mono', 'Droid Serif', 'EB Garamond', 'Expletus Sans', 'Fontdiner Swanky', 'Geo', 'Goudy Bookletter 1911', 'Gruppo', 'Homemade Apple', 'IM Fell', 'Inconsolata', 'Indie Flower', 'Irish Grover', 'Josefin Sans', 'Josefin Slab', 'Just Another Hand', 'Just Me Again Down Here', 'Kenia', 'Kranky', 'Kreon', 'Kristi', 'Lato', 'League Script', 'Lekton', 'Lobster', 'Luckiest Guy', 'Maiden Orange', 'Meddon', 'MedievalSharp', 'Merriweather', 'Michroma', 'Miltonian', 'Molengo', 'Montserrat', 'Mountains of Christmas', 'Neucha', 'Neuton', 'News Cycle', 'Nobile', 'Nova', 'OFL Sorts Mill Goudy TT', 'Old Standard TT', 'Orbitron', 'Oswald', 'Over the Rainbow', 'PT Sans', 'PT Serif', 'Pacifico by Vernon Adams ', 'Pacifico', 'Permanent Marker', 'Philosopher', 'Puritan', 'Quattrocento', 'Quattrocento Sans', 'Radley by Vernon Adams ', 'Radley', 'Raleway', 'Reenie Beanie', 'Rock Salt', 'Schoolbell', 'Six Caps', 'Slackey', 'Smythe', 'Sniglet', 'Special Elite', 'Sue Ellen Francisco', 'Sunshiney', 'Swanky and Moo Moo', 'Syncopate', 'Tangerine', 'Terminal Dosis Light', 'The Girl Next Door', 'Tinos', 'Ubuntu', 'UnifrakturMaguntia', 'Unkempt', 'VT323', 'Vibur', 'Vollkorn', 'Waiting for the Sunrise', 'Wallpoet', 'Walter Turncoat', 'Yanone Kaffeesatz']">
 
-    <h2>Medialog Googlefonts Fontsheet</h2>
+<h2>Medialog Googlefonts Fontsheet</h2>
+    <input type="text" size= 80 value="Write something here when the page has loaded (which takes some time)"/>
+    <script>
+    $("input").keyup(function () {
+      var value = $(this).val();
+      $(".fontoverview p").text(value);
+    }).keyup();
+    </script>
+
     <div class="fontoverview" tal:repeat="fontfamily families">
         <h3><span tal:content="fontfamily" /></h3>
         <hr/>
