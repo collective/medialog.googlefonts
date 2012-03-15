@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: medialog.googlefonts
-Version: 1.2
+Version: 1.2.1
 Summary: Googlefonts for Plone
 Home-page: http://medialog.no
 Author: Espen Moe-Nilssen
@@ -24,6 +24,10 @@ Description: Introduction
         
         Changelog
         =========
+        
+        1.2-1
+        ------------------------------------
+        Missing , in font names
         
         1.2
         ------------------------------------
