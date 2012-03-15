@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2
+------------------------------------
+Sorted the fonts with most interesting first.
+
 1.1.1
 ------------------------------------
 Added Norwegian letters to the fontsheet
