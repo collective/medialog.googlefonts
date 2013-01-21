@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="medialog.googlefonts">
+
+   <include file="skins.zcml" />
+   <include file="profiles.zcml" />
+   <include package=".browser" />
+
+   <adapter factory=".configlet.GooglefontsControlPanelAdapter" />
+  
+   <browser:page
+       name="googlefonts_controlpanel"
+       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+       class=".configlet.GooglefontsControlPanel"
+       permission="cmf.ManagePortal"
+       />
+       
+
+</configure>

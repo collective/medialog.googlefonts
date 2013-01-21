@@ -1,1 +1,2 @@
-<script type="text/javascript" tal:replace='structure here/googlefonts.js'></script>
+<script type="text/javascript" tal:replace="structure context/googlefonts.js">
+</script>

@@ -1,0 +1,11 @@
+<dtml-with get_googlefonts_properties>
+
+&dtml-googlefonts; {
+    font-family: '&dtml-googlefontfamily;', arial, serif !important; 
+    font-size: &dtml-googlefontfamilysize; !important;  
+    &dtml-googlefontcss;;  
+}
+
+&dtml-extracss;
+
+</dtml-with>
