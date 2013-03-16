@@ -7,7 +7,7 @@
  <stylesheet title=""
     id="googlefonts.css"
     media="screen" rel="stylesheet" rendering="import"
-    cacheable="True" compression="safe" cookable="True"
+    cacheable="True" cookable="True"
     enabled="1" expression=""/>
 
     
