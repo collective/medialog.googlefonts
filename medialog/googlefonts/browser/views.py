@@ -24,10 +24,9 @@ class CSS(BrowserView):
     font-size:    %(googlefontfamilysize)s !important;  
     %(googlefontcss)s;  
 }
-%(extracss)s
-
-      
+%(extracss)s      
 """ % {
+		'googlefonts'    : googlefonts,,
 		'googlefontfamily'    : googlefontfamily,
 		'googlefontfamilysize': googlefontfamilysize,
 		'googlefontcss'       : googlefontcss,
