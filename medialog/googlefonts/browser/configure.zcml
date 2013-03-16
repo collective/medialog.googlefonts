@@ -22,7 +22,7 @@
     <browser:page
         name="googlefonts.js"
         for="*"
-        class=".view.JavaScript"
+        class=".views.JavaScript"
         permission="zope2.View"
         layer="medialog.googlefonts.interfaces.IGooglefontsLayer"
     />
@@ -30,7 +30,7 @@
     <browser:page
         name="googlefonts.css"
         for="*"
-        class=".view.CSS"
+        class=".views.CSS"
         permission="zope2.View"
         layer="medialog.googlefonts.interfaces.IGooglefontsLayer"
     />

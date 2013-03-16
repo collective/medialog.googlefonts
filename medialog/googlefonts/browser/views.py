@@ -28,9 +28,9 @@ WebFontConfig = {
 	var s = document.getElementsByTagName('script')[0];
 	s.parentNode.insertBefore(wf, s);
 })();      
-""" % (
-		'googlefontfamily'=googlefontfamily,
-    )
+""" % {
+		'googlefontfamily':googlefontfamily,
+    }
 
 
 class CSS(BrowserView):
@@ -59,9 +59,9 @@ class CSS(BrowserView):
 %(extracss)s
 
       
-""" % (
-		'googlefontfamily'    = googlefontfamily,
-		'googlefontfamilysize'= googlefontfamilysize,
-		'googlefontcss'       = googlefontcss,
-		'extracss'     		  = extracss,
-    )
+""" % {
+		'googlefontfamily'    : googlefontfamily,
+		'googlefontfamilysize': googlefontfamilysize,
+		'googlefontcss'       : googlefontcss,
+		'extracss'     		  : extracss,
+    }
