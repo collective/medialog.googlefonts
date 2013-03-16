@@ -1,38 +1,6 @@
 from Products.Five.browser import BrowserView
 from Products.CMFCore.utils import getToolByName
 
-
-class JavaScript(BrowserView):
-
-    @property
-    def googlefonts_properties(self):
-        properties_tool = getToolByName(self.context, 'portal_properties')
-        return getattr(properties_tool, 'googlefonts_properties', None)
-
-    def __call__(self, request=None, response=None):
-        """Returns global configuration for googlefonts taken from portal_properties."""
-        self.request.response.setHeader("Content-type", "text/javascript")
-
-        googlefontfamily = getattr(self.googlefonts_properties, 'googlefontfamily', '')
-
-        return """<script>
-WebFontConfig = {
-	google: { families: [ '%(googlefontfamily)s' ] }
-};
-(function() {
-	var wf = document.createElement('script');
-	wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-		'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-	wf.type = 'text/javascript';
-	wf.async = 'true';
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(wf, s);
-})();      
-</script>""" % {
-		'googlefontfamily':googlefontfamily,
-    }
-
-
 class CSS(BrowserView):
 
     @property
