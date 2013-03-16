@@ -13,6 +13,7 @@ class CSS(BrowserView):
         You can change these setting from the control panel"""
         self.request.response.setHeader("Content-type", "text/javascript")
 
+        googlefonts = getattr(self.googlefonts_properties, 'googlefonts', '')
         googlefontfamily = getattr(self.googlefonts_properties, 'googlefontfamily', '')
         googlefontfamilysize = getattr(self.googlefonts_properties, 'googlefontfamilysize', '')
         googlefontcss = getattr(self.googlefonts_properties, 'googlefontcss', '')
