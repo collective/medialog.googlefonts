@@ -27,7 +27,7 @@ class CSS(BrowserView):
 }
 %(extracss)s      
 """ % {
-		'googlefonts'    : googlefonts,,
+		'googlefonts'    : googlefonts,
 		'googlefontfamily'    : googlefontfamily,
 		'googlefontfamilysize': googlefontfamilysize,
 		'googlefontcss'       : googlefontcss,
