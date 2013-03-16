@@ -15,7 +15,7 @@ class JavaScript(BrowserView):
 
         googlefontfamily = getattr(self.googlefonts_properties, 'googlefontfamily', '')
 
-        return """\
+        return """<script>
 WebFontConfig = {
 	google: { families: [ '%(googlefontfamily)s' ] }
 };
@@ -28,7 +28,7 @@ WebFontConfig = {
 	var s = document.getElementsByTagName('script')[0];
 	s.parentNode.insertBefore(wf, s);
 })();      
-""" % {
+</script>""" % {
 		'googlefontfamily':googlefontfamily,
     }
 
