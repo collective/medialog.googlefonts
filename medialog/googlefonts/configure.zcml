@@ -4,18 +4,12 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="medialog.googlefonts">
 
-   <include file="skins.zcml" />
    <include file="profiles.zcml" />
    <include package=".browser" />
 
-   <adapter factory=".configlet.GooglefontsControlPanelAdapter" />
-  
-   <browser:page
-       name="googlefonts_controlpanel"
-       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-       class=".configlet.GooglefontsControlPanel"
-       permission="cmf.ManagePortal"
-       />
-       
+  <utility
+    provides="zope.schema.interfaces.IVocabularyFactory"
+    component=".vocabularies.FontsVocabulary"
+    name="medialog.googlefonts.fonts" />
 
 </configure>

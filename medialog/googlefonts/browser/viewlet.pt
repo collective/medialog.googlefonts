@@ -1,2 +1,1 @@
-<script type="text/javascript" tal:content="structure view/fontproperties">
-</script>
+<div tal:content="context/fontproperties"/>

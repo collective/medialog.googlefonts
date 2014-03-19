@@ -6,6 +6,7 @@ Changelog
 Removed python script, dtml variables in css and js.
 The css and js files are now in 'browser'
 
+
 1.2.1
 ------------------------------------
 Missing , in font names

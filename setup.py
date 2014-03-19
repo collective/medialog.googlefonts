@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.3'
+version = '1.4'
 
 setup(name='medialog.googlefonts',
       version=version,
@@ -24,6 +24,7 @@ setup(name='medialog.googlefonts',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'medialog.controlpanel',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<registry>
+    <records interface="medialog.googlefonts.interfaces.IGooglefontsSettings">
+        <value key="googlefonts"></value>
+        <value key="googlefontfamily"></value>
+        <value key="googlefontfamilysize"></value>
+        <value key="googlefontcss"></value>
+        <value key="extracss"></value>
+    </records>
+</registry>
