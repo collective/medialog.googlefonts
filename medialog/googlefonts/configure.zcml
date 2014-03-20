@@ -8,8 +8,8 @@
    <include package=".browser" />
 
   <utility
-    provides="zope.schema.interfaces.IVocabularyFactory"
-    component=".vocabularies.FontsVocabulary"
-    name="medialog.googlefonts.fonts" />
+  	provides="zope.schema.interfaces.IVocabularyFactory"
+    component="medialog.googlefonts.vocabularies.FontsVocabulary"
+    name="FontsVocabulary" />
 
 </configure>

@@ -1,1 +1,1 @@
-<div tal:content="context/fontproperties"/>
+<link href='' tal:attributes="href view/construct_url" rel='stylesheet' type='text/css' >

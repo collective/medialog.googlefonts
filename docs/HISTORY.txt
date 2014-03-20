@@ -1,6 +1,13 @@
 Changelog
 =========
 
+2.0
+------------------------------------
+Complete remake of the product. 
+You should not try to upgrade an earlier versjon because this version uses another approach to fetch the fonts from google.
+All settings are now moved to the 'medialog.controlpanel' 
+
+
 1.3
 ------------------------------------
 Removed python script, dtml variables in css and js.

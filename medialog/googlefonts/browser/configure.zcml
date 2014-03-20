@@ -7,8 +7,8 @@
     <browser:viewlet
     	name="medialog.googlefonts.head"
 	    manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
-	    template="viewlet.pt"
 	    class=".viewlet.GooglefontsHead"
+	    template="viewlet.pt"
 	    layer="..interfaces.IGooglefontsLayer"
 	    permission="zope2.View"
     />

@@ -1,23 +1,47 @@
 from Products.Five.browser import BrowserView
 from Products.CMFCore.utils import getToolByName
 
-class CSS(BrowserView):
+from zope.component import getUtility
+from plone.registry.interfaces import IRegistry
+from ..interfaces import IGooglefontsSettings
 
+class CSS(BrowserView):
+    
+    def settings(self):
+        """Returns settings from  registry."""
+        return getUtility(IRegistry).forInterface(IGooglefontsSettings)
+    
     @property
-    def googlefonts_properties(self):
-        properties_tool = getToolByName(self.context, 'portal_properties')
-        return getattr(properties_tool, 'googlefonts_properties', None)
+    def fontfamily(self):
+        """Returns  fontfamily taken from registry."""
+        first_font =  self.settings().googlefontfamily[0]
+        return first_font.replace("+", " ") or ' '
+    
+    @property
+    def fonts(self):
+        """Returns  fonts taken from registry."""
+        return self.settings().googlefonts or ' '
+    
+    @property
+    def fontssize(self):
+        """Returns  fontsize taken from registry."""
+        return self.settings().googlefontfamilysize or ' '
+    
+    
+    @property
+    def fontcss(self):
+        """Returns  fontcss taken from registry."""
+        return self.settings().googlefontcss or ' '
+    
+    @property
+    def extracss(self):
+        """Returns  extracss taken from registry."""
+        return self.settings().extracss or ' '
+    
 
     def __call__(self, request=None, response=None):
-        """Returns global configuration for googlefonts taken from portal_properties.
-        You can change these setting from the control panel"""
+        """Returns settings from the control panel / registry"""
         self.request.response.setHeader("Content-type", "text/css")
-
-        googlefonts			 = getattr(self.googlefonts_properties, 'googlefonts', '')
-        googlefontfamily	 = getattr(self.googlefonts_properties, 'googlefontfamily', '')
-        googlefontfamilysize = getattr(self.googlefonts_properties, 'googlefontfamilysize', '')
-        googlefontcss		 = getattr(self.googlefonts_properties, 'googlefontcss', '')
-        extracss 			 = getattr(self.googlefonts_properties, 'extracss', '')   
         
         return """\
 %(googlefonts)s {
@@ -27,11 +51,11 @@ class CSS(BrowserView):
 }
 %(extracss)s      
 """ % {
-		'googlefonts'    	  : googlefonts,
-		'googlefontfamily'    : googlefontfamily,
-		'googlefontfamilysize': googlefontfamilysize,
-		'googlefontcss'       : googlefontcss,
-		'extracss'     		  : extracss,
+		'googlefonts'    	  : self.fonts,
+		'googlefontfamily'    : self.fontfamily,
+		'googlefontfamilysize': self.fontssize,
+		'googlefontcss'       : self.fontcss,
+		'extracss'     		  : self.extracss,
     }
     
     
