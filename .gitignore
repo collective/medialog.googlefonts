@@ -4,3 +4,5 @@
 dist
 .svn
 *egg-info*
+build
+build/

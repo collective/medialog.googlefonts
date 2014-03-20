@@ -1,4 +1,0 @@
-<layers>
-    <layer name="medialog.googlefonts" 
-           interface="medialog.googlefonts.interfaces.IGooglefontsLayer" />
-</layers>
