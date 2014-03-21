@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+   
+ <object name="googlefonts" remove="True"/>
+    
+ <skin-path name="*">
+  <layer name="googlefonts" remove="True"/>
+ </skin-path>
+ 
+</object>

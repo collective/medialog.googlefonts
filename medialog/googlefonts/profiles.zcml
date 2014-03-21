@@ -11,4 +11,34 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="medialog.googlefonts uninstall"
+      directory="profiles/uninstall"
+      description="Remove Google Webfonts to your site."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+      
+  <genericsetup:upgradeStep
+      title="medialog.googlefonts upgrade to 21"
+      description="medialog.googlefonts upgrade step"
+      source="*"
+      destination="21"
+      handler=".upgrades.upgrade_to_21"
+      profile="medialog.googlefonts:default" />
+
+ 
+  <genericsetup:importStep
+      name="add_controlpanel_settings"
+      title="medialog.googlefonts add to controlpanel"
+      description="removes entry in medialog.controlpanel"
+      handler=".upgrades.also_provides" />
+ 
+  <genericsetup:importStep
+      name="remove_controlpanel_settings"
+      title="medialog.googlefonts remove from controlpanel"
+      description="removes entry in medialog.controlpanel"
+      handler=".upgrades.no_longer_provides" />
+    
+      
 </configure>

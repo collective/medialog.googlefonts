@@ -7,3 +7,6 @@ registerFileExtension('svg', FSFile)
 registerFileExtension('woff', FSFile)
 registerFileExtension('eot', FSFile)
 registerMetaType('File', FSFile)
+
+def initialize(context):
+    pass

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel">
+ <configlet title="Googlefont settings"
+            action_id="googlefonts" appId="googlefonts"
+            remove="True"
+            delete="True">
+    <permission>Manage portal</permission>
+ </configlet>
+</object>

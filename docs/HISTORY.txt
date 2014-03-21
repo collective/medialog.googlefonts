@@ -4,8 +4,12 @@ Changelog
 2.0
 ------------------------------------
 Complete remake of the product. 
-You should not try to upgrade an earlier versjon because this version uses another approach to fetch the fonts from google.
+This version uses another approach to fetch the fonts from google.
+There is no more javascript, everything is done with CSS.
+It is possible to enable multiple fonts at the same time
 All settings are now moved to the 'medialog.controlpanel' 
+There is a new uninstall profile (thanks Nathan) and settings from medialog.controlpanel is removed when uninstalled.
+
 
 
 1.3
