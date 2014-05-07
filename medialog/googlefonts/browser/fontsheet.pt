@@ -6,7 +6,41 @@
       metal:use-macro="context/main_template/macros/master"
       i18n:domain="medialog.googlefonts">
 
+	<metal:css fill-slot="style_slot">
+	<style>
+		.fontoverview p  {
+			font-size:  34px;
+		}
+		.fontoverview {
+			padding:10px 20px; 
+			background: #FBFBFB; 
+			margin-bottom:10px;
+		}
+	</style>
+	</metal:css>
+	
+	<body>
+	<metal:main fill-slot="content" 
+				tal:define="families view/googlefontfamily">
 
+	<h2>Medialog Googlefonts Fontsheet</h2>
+		<input type="text" size= 80 
+			   value="Write something here when the page has loaded"/>
+		<script>
+			$("input").keyup(function () {
+			  var value = $(this).val();
+			  $(".fontoverview p").text(value);
+			}).keyup();
+		</script>
+
+		<div class="fontoverview" tal:repeat="fontfamily families">
+			<h3><span tal:content="python:fontfamily.replace('+', ' ')" /></h3>
+			<hr/>
+			<p style="" tal:attributes="style python:'font-family:' + fontfamily.replace('+', ' ')"> 
+			 1234567890 abcde fghijk lmnopqrst uvwxyz &#230;&#248;&#229; ABCDE FGHIJKL MNOPQRST UVWXYZ &#198;&#216;&#197;
+			</p>
+		</div>
+
+	</metal:main>
+</body>
 </html>
-
-   

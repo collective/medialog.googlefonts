@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.1
+------------------------------------
+(Re)added /@@fontsheet browserview so it now only shows enabled fonts.
+If you want to show all fonts you can just enable all in the control panel.
+
+
 2.0.3
 ------------------------------------
 Install require plane.directives.form

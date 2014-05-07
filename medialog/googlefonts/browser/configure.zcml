@@ -16,11 +16,10 @@
    <browser:page
 	    for="*"
         name="fontsheet"
+        class=".views.Fontsheet"
 	    template="fontsheet.pt"
         permission="zope2.View"
     />
-
-
 
     <browser:page
         name="googlefonts.css"

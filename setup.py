@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '2.0.3'
+version = '2.1'
 
 setup(name='medialog.googlefonts',
       version=version,

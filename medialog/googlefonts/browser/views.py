@@ -5,6 +5,18 @@ from zope.component import getUtility
 from plone.registry.interfaces import IRegistry
 from ..interfaces import IGooglefontsSettings
 
+class Fontsheet(BrowserView):
+    
+    def settings(self):
+        """Returns settings from  registry."""
+        return getUtility(IRegistry).forInterface(IGooglefontsSettings)
+    
+    @property
+    def googlefontfamily(self):
+        """Returns  fontfamilies taken from registry."""
+        return  self.settings().googlefontfamily
+    
+
 class CSS(BrowserView):
     
     def settings(self):
