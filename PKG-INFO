@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: medialog.googlefonts
-Version: 1.3.1
+Version: 2.0.2
 Summary: Googlefonts for Plone
 Home-page: http://medialog.no
 Author: Espen Moe-Nilssen
@@ -24,6 +24,22 @@ Description: Introduction
         
         Changelog
         =========
+        
+        2.0.1
+        ------------------------------------
+        More fonts
+        
+        
+        2.0
+        ------------------------------------
+        Complete remake of the product. 
+        This version uses another approach to fetch the fonts from google.
+        There is no more javascript, everything is done with CSS.
+        It is possible to enable multiple fonts at the same time
+        All settings are now moved to the 'medialog.controlpanel' 
+        There is a new uninstall profile (thanks Nathan) and settings from medialog.controlpanel is removed when uninstalled.
+        
+        
         
         1.3
         ------------------------------------

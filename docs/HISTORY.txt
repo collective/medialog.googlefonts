@@ -1,9 +1,15 @@
 Changelog
 =========
 
+2.0.3
+------------------------------------
+Install require plane.directives.form
+
+
 2.0.1
 ------------------------------------
-install requires plone.directives.form
+More fonts
+
 
 2.0
 ------------------------------------
