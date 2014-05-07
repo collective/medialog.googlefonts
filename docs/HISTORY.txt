@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2.0.1
+------------------------------------
+install requires plone.directives.form
+
 2.0
 ------------------------------------
 Complete remake of the product. 
