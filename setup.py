@@ -25,6 +25,7 @@ setup(name='medialog.googlefonts',
       install_requires=[
           'setuptools',
           'medialog.controlpanel',
+          'plone.directives.form',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
