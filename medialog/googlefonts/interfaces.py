@@ -41,7 +41,7 @@ class IGooglefontsSettings(form.Schema):
         required=True,
         min_length=1,
         title=_(u"label_googlefontfamily", default=u"Enble fonts"),
-        description=u"Select fonts. Preview of fonts at http://yoursite.com/@@fontsheet",
+        description=u"Select fonts. Preview of fonts at <a href='@@fontsheet'>http://yoursite.com/@@fontsheet</a>",
     )
    
     googlefontfamilysize = schema.TextLine(title=_(u"label_googlefontfamily", default=u'Size of the font'),
