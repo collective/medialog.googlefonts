@@ -7,7 +7,7 @@
       name="default"
       title="Medialog Googlefonts"
       directory="profiles/default"
-      description="Adds Google Webfonts to your site."
+      description="Add Google webfonts to your site."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

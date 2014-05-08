@@ -1,10 +1,15 @@
 Changelog
 =========
 
+2.2
+------------------------------------
+Added /@@fontsheet_all to show all the fonts.
+There are now so many fonts that the url has to be "batched"
+
+
 2.1
 ------------------------------------
 (Re)added /@@fontsheet browserview so it now only shows enabled fonts.
-If you want to show all fonts you can just enable all in the control panel.
 
 
 2.0.3

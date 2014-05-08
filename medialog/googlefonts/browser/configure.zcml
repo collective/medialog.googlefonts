@@ -12,7 +12,7 @@
 	    layer="..interfaces.IGooglefontsLayer"
 	    permission="zope2.View"
     />
-  
+    
    <browser:page
 	    for="*"
         name="fontsheet"
@@ -21,6 +21,14 @@
         permission="zope2.View"
     />
 
+   <browser:page
+	    for="*"
+        name="fontsheet_all"
+        class=".views.Fontsheet"
+	    template="fontsheet_all.pt"
+        permission="zope2.View"
+    />
+    
     <browser:page
         name="googlefonts.css"
         for="*"

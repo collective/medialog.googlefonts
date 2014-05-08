@@ -1,1 +1,10 @@
-<link href='' tal:attributes="href view/construct_url" rel='stylesheet' type='text/css' >
+<tal:repeat 
+	tal:define="lists view/construct_url"
+	tal:repeat="list lists">
+	
+	<link href='' 
+		tal:attributes="href list" 
+		rel='stylesheet' 
+		type='text/css' >
+
+</tal:repeat>

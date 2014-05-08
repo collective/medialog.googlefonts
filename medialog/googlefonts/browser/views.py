@@ -4,6 +4,7 @@ from Products.CMFCore.utils import getToolByName
 from zope.component import getUtility
 from plone.registry.interfaces import IRegistry
 from ..interfaces import IGooglefontsSettings
+from ..vocabularies import fonts
 
 class Fontsheet(BrowserView):
     
@@ -12,10 +13,33 @@ class Fontsheet(BrowserView):
         return getUtility(IRegistry).forInterface(IGooglefontsSettings)
     
     @property
-    def googlefontfamily(self):
-        """Returns  fontfamilies taken from registry."""
-        return  self.settings().googlefontfamily
+    def fontfamily(self):
+        """Returns  fontfamily taken from registry."""
+        return self.settings().googlefontfamily or 'Times'
     
+    @property
+    def fontfamilies(self):
+        """Returns  fontfamilies taken from registry."""
+        return  fonts(self)
+    
+    @property
+    def construct_url(self):
+        """returns the urls that will be needed for getting the fonts from google 
+            the url can not be too long, so we will have to split it up
+          """
+        size=30
+        fontfamilies = fonts(self)
+        groupedlist = [fontfamilies[i:i+size] for i  in range(0, len(fontfamilies), size)]
+        
+        fontlist = []
+        
+        for lists in groupedlist:
+            url = 'http://fonts.googleapis.com/css?family=' +  ("|".join(str(font) for font in lists))
+            url.replace(" ", "+")
+            fontlist.append(url)
+        
+        return fontlist
+
 
 class CSS(BrowserView):
     
