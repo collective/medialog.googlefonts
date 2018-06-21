@@ -4,6 +4,7 @@ Changelog
 
 2.2.3 (unreleased)
 ------------------------------------
+Added Spanish translation [macagua]
 Enabled i18n support [macagua]
 Added improvements about README file [macagua]
 

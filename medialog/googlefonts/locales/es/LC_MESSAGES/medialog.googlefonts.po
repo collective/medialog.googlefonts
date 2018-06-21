@@ -1,0 +1,111 @@
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: medialog.googlefonts\n"
+"POT-Creation-Date: 2018-06-21 17:03+0000\n"
+"PO-Revision-Date: 2018-05-02 13:45-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: en\n"
+"Language-Name: Español\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: medialog.googlefonts\n"
+"Language: es\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+msgid "Add-ons Controlpanel"
+msgstr "Configuración de Google Fonts"
+
+#: ../interfaces.py:49
+msgid "300%"
+msgstr "300%"
+
+#: ../profiles.zcml:12
+msgid "Add Google webfonts to your site."
+msgstr "Agregar Google Fonts a su sitio."
+
+#: ../interfaces.py:20
+#: ../profiles/default/controlpanel.xml
+msgid "Googlefont Settings"
+msgstr "Configuración de Google Fonts"
+
+#: ../profiles.zcml:12
+msgid "Medialog Googlefonts"
+msgstr "Medialog Google Fonts"
+
+#: ../browser/fontsheet.pt:26
+#: ../browser/fontsheet_all.pt:36
+msgid "Medialog Googlefonts Fontsheet"
+msgstr "Hoja de fuentes Google Fonts"
+
+#: ../profiles.zcml:20
+msgid "Remove Google Webfonts to your site."
+msgstr "Remover Google Fonts de su sitio."
+
+#: ../browser/fontsheet.pt:44
+msgid "Show All Fonts"
+msgstr "Mostrar todas las fuentes de Google Fonts"
+
+#: ../browser/fontsheet.pt:27
+#: ../browser/fontsheet_all.pt:37
+msgid "Write something here when the page has loaded"
+msgstr "Escribe algo aquí cuando la página se haya cargado"
+
+#. Default: "Google Font on"
+#: ../interfaces.py:29
+msgid "googlefonts"
+msgstr "Google Fonts en"
+
+#. Default: "The divs or classes to put the FIRST Google Fonts on."
+#: ../interfaces.py:30
+msgid "googlefonts_on"
+msgstr "Los elementos divs o classes HTML que van PRIMERO para Google Fonts."
+
+#. Default: "Example: #content .sometitle { font-family: \"My Font\", 'Times', 'Sans-Serif' !important; font-size: 300% !important; }"
+#: ../interfaces.py:59
+#, fuzzy
+msgid "help_extracss"
+msgstr "Ejemplo: #content .sometitle { font-family: 'Fuente Seleccionada', 'Times', 'Sans-Serif' !important; font-size: 300% !important; }"
+
+#: ../interfaces.py:53
+msgid "help_googlefontcss"
+msgstr ""
+
+#. Default: "Select fonts. Preview of fonts at <a href='@@fontsheet' target='_blank' >http://yoursite.com/@@fontsheet</a>"
+#: ../interfaces.py:42
+msgid "help_googlefontfamily"
+msgstr "Seleccione las fuentes. La vista previa de las fuentes en <a href='@@fontsheet' target='_blank'>http://susitioweb.com/@@fontsheet</a>"
+
+#. Default: "Font Size for FIRST googlefont"
+#: ../interfaces.py:47
+msgid "help_googlefontfamilysize"
+msgstr "Tamaño de fuente que van PRIMERO para Google Fonts"
+
+#. Default: "Extra css. Include classes and divs. No typos please...."
+#: ../interfaces.py:57
+msgid "label_extracss"
+msgstr "El estilo css extra. Incluye clases y divs. Por favor, sin errores tipográficos...."
+
+#. Default: "CSS for FIRST Google Font. No typos please...."
+#: ../interfaces.py:52
+msgid "label_googlefontcss"
+msgstr "El estilo CSS que van PRIMERO para Google Font. Por favor, sin errores tipográficos...."
+
+#. Default: "Enable fonts"
+#: ../interfaces.py:41
+msgid "label_googlefontfamily"
+msgstr "Habilitar fuentes"
+
+#. Default: "Size of the font"
+#: ../interfaces.py:46
+msgid "label_googlefontfamilysize"
+msgstr "Tamaño de la fuente"
+
+#: ../profiles.zcml:20
+msgid "medialog.googlefonts uninstall"
+msgstr "Desinstalar medialog.googlefonts"
