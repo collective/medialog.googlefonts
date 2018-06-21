@@ -1,0 +1,106 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-06-21 17:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: medialog.googlefonts\n"
+
+#: ../interfaces.py:49
+msgid "300%"
+msgstr ""
+
+#: ../profiles.zcml:12
+msgid "Add Google webfonts to your site."
+msgstr ""
+
+#: ../interfaces.py:20
+#: ../profiles/default/controlpanel.xml
+msgid "Googlefont Settings"
+msgstr ""
+
+#: ../profiles.zcml:12
+msgid "Medialog Googlefonts"
+msgstr ""
+
+#: ../browser/fontsheet.pt:26
+#: ../browser/fontsheet_all.pt:36
+msgid "Medialog Googlefonts Fontsheet"
+msgstr ""
+
+#: ../profiles.zcml:20
+msgid "Remove Google Webfonts to your site."
+msgstr ""
+
+#: ../browser/fontsheet.pt:44
+msgid "Show All Fonts"
+msgstr ""
+
+#: ../browser/fontsheet.pt:27
+#: ../browser/fontsheet_all.pt:37
+msgid "Write something here when the page has loaded"
+msgstr ""
+
+#. Default: "Google Font on"
+#: ../interfaces.py:29
+msgid "googlefonts"
+msgstr ""
+
+#. Default: "The divs or classes to put the FIRST Google Fonts on."
+#: ../interfaces.py:30
+msgid "googlefonts_on"
+msgstr ""
+
+#. Default: "Example: #content .sometitle { font-family: \"My Font\", 'Times', 'Sans-Serif' !important; font-size: 300% !important; }"
+#: ../interfaces.py:59
+msgid "help_extracss"
+msgstr ""
+
+#: ../interfaces.py:53
+msgid "help_googlefontcss"
+msgstr ""
+
+#. Default: "Select fonts. Preview of fonts at <a href='@@fontsheet' target='_blank' >http://yoursite.com/@@fontsheet</a>"
+#: ../interfaces.py:42
+msgid "help_googlefontfamily"
+msgstr ""
+
+#. Default: "Font Size for FIRST googlefont"
+#: ../interfaces.py:47
+msgid "help_googlefontfamilysize"
+msgstr ""
+
+#. Default: "Extra css. Include classes and divs. No typos please...."
+#: ../interfaces.py:57
+msgid "label_extracss"
+msgstr ""
+
+#. Default: "CSS for FIRST Google Font. No typos please...."
+#: ../interfaces.py:52
+msgid "label_googlefontcss"
+msgstr ""
+
+#. Default: "Enable fonts"
+#: ../interfaces.py:41
+msgid "label_googlefontfamily"
+msgstr ""
+
+#. Default: "Size of the font"
+#: ../interfaces.py:46
+msgid "label_googlefontfamilysize"
+msgstr ""
+
+#: ../profiles.zcml:20
+msgid "medialog.googlefonts uninstall"
+msgstr ""

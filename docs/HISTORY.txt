@@ -4,6 +4,7 @@ Changelog
 
 2.2.3 (unreleased)
 ------------------------------------
+Enabled i18n support [macagua]
 Added improvements about README file [macagua]
 
 2.2

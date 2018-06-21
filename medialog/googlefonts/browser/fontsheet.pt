@@ -23,9 +23,9 @@
 	<metal:main fill-slot="content" 
 				tal:define="families view/fontfamily">
 
-	<h2>Medialog Googlefonts Fontsheet</h2>
-		<input type="text" size= 80 
-			   value="Write something here when the page has loaded"/>
+	<h2 i18n:translate="">Medialog Googlefonts Fontsheet</h2>
+		<input type="text" size="80" i18n:attributes="value" 
+			   value="Write something here when the page has loaded" />
 		<script>
 			$("input").keyup(function () {
 			  var value = $(this).val();
@@ -41,7 +41,7 @@
 			</p>
 		</div>
 
-        <p><a href="@@fontsheet_all">Show All Fonts</a></p>
+        <p><a href="@@fontsheet_all" i18n:translate="">Show All Fonts</a></p>
 	</metal:main>
 </body>
 </html>
