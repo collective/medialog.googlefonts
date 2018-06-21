@@ -31,7 +31,7 @@ def test_suite():
 
         # Unit tests
         #doctestunit.DocFileSuite(
-        #    'README.txt', package='medialog.googlefonts',
+        #    'README.rst', package='medialog.googlefonts',
         #    setUp=testing.setUp, tearDown=testing.tearDown),
 
         #doctestunit.DocTestSuite(
@@ -41,7 +41,7 @@ def test_suite():
 
         # Integration tests that use PloneTestCase
         #ztc.ZopeDocFileSuite(
-        #    'README.txt', package='medialog.googlefonts',
+        #    'README.rst', package='medialog.googlefonts',
         #    test_class=TestCase),
 
         #ztc.FunctionalDocFileSuite(

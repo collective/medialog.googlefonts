@@ -1,6 +1,11 @@
 Changelog
 =========
 
+
+2.2.3 (unreleased)
+------------------------------------
+Added improvements about README file [macagua]
+
 2.2
 ------------------------------------
 Added /@@fontsheet_all to show all the fonts.
