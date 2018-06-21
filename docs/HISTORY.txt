@@ -4,6 +4,7 @@ Changelog
 
 2.2.3 (unreleased)
 ------------------------------------
+Added controlpanel settings for the GS default profile [macagua]
 Added improvements about the GS uninstall profile [macagua]
 Added a GS profile for demostration settings [macagua]
 Added Spanish translation [macagua]
