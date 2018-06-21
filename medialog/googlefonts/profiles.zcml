@@ -12,6 +12,14 @@
       />
 
   <genericsetup:registerProfile
+      name="demo"
+      title="Medialog Googlefonts demo"
+      directory="profiles/demo"
+      description="Add Google webfonts demostration settings to your site."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
       name="uninstall"
       title="medialog.googlefonts uninstall"
       directory="profiles/uninstall"
