@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-06-21 17:03+0000\n"
+"POT-Creation-Date: 2018-06-23 19:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,12 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: medialog.googlefonts\n"
 
-#: ../interfaces.py:49
+#: ../interfaces.py:48
 msgid "300%"
+msgstr ""
+
+#: ../profiles.zcml:20
+msgid "Add Google webfonts demostration settings to your site."
 msgstr ""
 
 #: ../profiles.zcml:12
@@ -40,6 +44,10 @@ msgid "Medialog Googlefonts Fontsheet"
 msgstr ""
 
 #: ../profiles.zcml:20
+msgid "Medialog Googlefonts demo"
+msgstr ""
+
+#: ../profiles.zcml:28
 msgid "Remove Google Webfonts to your site."
 msgstr ""
 
@@ -63,11 +71,11 @@ msgid "googlefonts_on"
 msgstr ""
 
 #. Default: "Example: #content .sometitle { font-family: \"My Font\", 'Times', 'Sans-Serif' !important; font-size: 300% !important; }"
-#: ../interfaces.py:59
+#: ../interfaces.py:58
 msgid "help_extracss"
 msgstr ""
 
-#: ../interfaces.py:53
+#: ../interfaces.py:52
 msgid "help_googlefontcss"
 msgstr ""
 
@@ -77,17 +85,17 @@ msgid "help_googlefontfamily"
 msgstr ""
 
 #. Default: "Font Size for FIRST googlefont"
-#: ../interfaces.py:47
+#: ../interfaces.py:46
 msgid "help_googlefontfamilysize"
 msgstr ""
 
 #. Default: "Extra css. Include classes and divs. No typos please...."
-#: ../interfaces.py:57
+#: ../interfaces.py:56
 msgid "label_extracss"
 msgstr ""
 
 #. Default: "CSS for FIRST Google Font. No typos please...."
-#: ../interfaces.py:52
+#: ../interfaces.py:51
 msgid "label_googlefontcss"
 msgstr ""
 
@@ -97,10 +105,10 @@ msgid "label_googlefontfamily"
 msgstr ""
 
 #. Default: "Size of the font"
-#: ../interfaces.py:46
+#: ../interfaces.py:45
 msgid "label_googlefontfamilysize"
 msgstr ""
 
-#: ../profiles.zcml:20
+#: ../profiles.zcml:28
 msgid "medialog.googlefonts uninstall"
 msgstr ""
