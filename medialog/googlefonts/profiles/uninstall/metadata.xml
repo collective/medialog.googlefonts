@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<metadata>
+  <version>21</version>
+  <dependencies>
+      <dependency>profile-medialog.controlpanel:uninstall</dependency>
+  </dependencies>
+</metadata>
