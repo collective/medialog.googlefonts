@@ -2,6 +2,7 @@
 medialog.googlefonts
 ====================
 
+
 Introduction
 ============
 
@@ -56,13 +57,13 @@ After you have installed the product, you get a control panel to choose an extra
 Preview fontsheet selected
 --------------------------
 
-You can find a preview of the fonts here: http://yoursite.com/@@fontsheet
+You can find a preview of the fontsheet selected here: http://yoursite.com/@@fontsheet
 
 
 Preview all fontsheets
 ----------------------
 
-You can find a preview of all fonts here: http://yoursite.com/@@fontsheet_all
+You can find a preview of all ``Google Fonts`` supported here: http://yoursite.com/@@fontsheet_all
 
 
 To do
